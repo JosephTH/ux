@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html, body {
+    height:100%;
+    background-color:#c6feec !important;
+}
+
+.circle {
+    margin: auto;
+    width:25vh; 
+    height:25vh;
+}
+.circle2 {
+    margin: auto;
+    width:15vh; 
+    height:15vh;
+}
+
+.input {
+    margin: auto;
+    width: 70vw;
+}
+.input2 {
+    
+    width: 90vw;
+}
+
+.info  {
+    text-align:center;
+    width: 100%;
+    border: 0px;
+    height: 5vh;
+}
+.info2  {
+    text-align:center;
+    width: 65%;
+    border: 0px;
+    height: 4vh;
+    float:right;
+    margin-right: 25px;
+    background: transparent;
+    border-bottom: 2px solid #77fef1;
+}
+
+.info_name {
+    font-size:21px; 
+    margin-left:12px;
+}
+
+.info_password {
+    font-size:21px; 
+    margin-left:-4px;
+}
+.infolink1 {
+    background-color: #e9fe59;
+    width: 100%;
+    height: 4.5vh;
+}
+
+.infolink2 {
+    background-color: #e9fe59;
+    width: 100%;
+    height: 4.5vh;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   text-align:left !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+   text-align:left !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+   text-align:left !important;
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+   text-align:left !important;
+}
+.login {
+    padding:0;
+    border:0;
+    background-color: yellow;
+}
+
+.yellow {
+  background: #fffe63; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #fffe63 , white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #fffe63, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #fffe63, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #fffe63 , white); /* Standard syntax */
+}
+
+
+select {
+    width: 70px;
+  -webkit-appearance: none;  /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  background: url("/assets/arrow5.png") no-repeat 95% 50%;  /* 화살표 모양의 이미지 */ 
+  background-color:white;
+  border: 2px solid #77fef1;
+}
+
+.select {
+    margin-left:25px;
+    text-align:center
+}
+
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand { 
+  display: none;
+  ;
+}
+
+.main_menu {
+    background-color:#fffe9a;
+    width: 30vw;
+    float:left;
+    margin: 0px 0px 0px 2.5vw;
+    height: 25vh;
+}
