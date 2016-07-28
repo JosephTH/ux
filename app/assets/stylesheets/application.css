@@ -15,18 +15,18 @@
  */
 html, body {
     height:100%;
-    background-color:#c6feec !important;
+    background-color:#c7e9ed !important;
 }
 
 .circle {
     margin: auto;
-    width:25vh; 
-    height:25vh;
+    width:30vh; 
+    height:30vh;
 }
 .circle2 {
     margin: auto;
-    width:15vh; 
-    height:15vh;
+    width:30vh; 
+    height:30vh;
 }
 
 .input {
@@ -52,7 +52,7 @@ html, body {
     float:right;
     margin-right: 25px;
     background: transparent;
-    border-bottom: 2px solid #77fef1;
+    border-bottom: 2px solid #72c7e5;
 }
 
 .info_name {
@@ -65,15 +65,17 @@ html, body {
     margin-left:-4px;
 }
 .infolink1 {
-    background-color: #e9fe59;
+    background-color: #15213b;
     width: 100%;
     height: 4.5vh;
+    color:white;
 }
 
 .infolink2 {
-    background-color: #e9fe59;
+    background-color: #15213b;
     width: 100%;
     height: 4.5vh;
+    color:white;
 }
 
 ::-webkit-input-placeholder {
@@ -102,11 +104,8 @@ html, body {
 }
 
 .yellow {
-  background: #fffe63; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #fffe63 , white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #fffe63, white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #fffe63, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #fffe63 , white); /* Standard syntax */
+  background: white; /* For browsers that do not support gradients */
+  /* Standard syntax */
 }
 
 
@@ -117,11 +116,11 @@ select {
   appearance: none;
   background: url("/assets/arrow5.png") no-repeat 95% 50%;  /* 화살표 모양의 이미지 */ 
   background-color:white;
-  border: 2px solid #77fef1;
+  border: 2px solid #72c7e5;
 }
 
 .select {
-    margin-left:25px;
+    margin-left: 12%;
     text-align:center
 }
 
@@ -138,4 +137,40 @@ select::-ms-expand {
     float:left;
     margin: 0px 0px 0px 2.5vw;
     height: 25vh;
+}
+
+
+.checkbox {
+    display: inline-block !important;
+    cursor: pointer;
+    font-size: 13px !important;  
+    margin: 0px 0px 0px 5px !important;              
+}
+input[type=checkbox] {
+    display: none;
+}
+.checkbox:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px solid #26ade8;
+}
+input[type=checkbox]:checked + .checkbox:before {
+    content: "\2713";
+    background-color: white;
+    text-shadow: 0px 0px 0px black;
+    font-size: 17px;
+}
+
+label {
+font-weight: normal !important;
+}
+
+.nav_img {
+    padding: 0px 0px 0px 0px !important;
 }

@@ -3,4 +3,21 @@ class ExchangeController < ApplicationController
   def index
     
   end
+  
+  def search
+  
+  end
+  
+  def search_result
+  
+  end
+  
+  def school_info
+  
+  end
+  
+  def ourschool
+      
+  end
+  
 end

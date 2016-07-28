@@ -486,32 +486,136 @@ table {
 	border-spacing: 0;
 }
 </style>
-	<header>
-	  <div id="cd-hamburger-menu2"><a class="cd-img-replace" onclick="location.href='/users/sign_out'"></a></div>
-	  
-<center><p style="font-size:24px; display:table-cell; vertical-align:middle; height:50px;">나랑 교환할래?</p></center>
 
-		<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
-	</header>
 
-	<main>
-<div class="row" style="margin-left: 0px; margin-right: 0px;">
-  <div class="main_menu">
-    <img src="/assets/document.png">
-    <h4 style="text-align:center;">파견가능<br/>학교리스트</h4>
+
+<header>
+    <center>
+        	  <div id="cd-hamburger-menu2"><a class="cd-img-replace" onclick="location.href='/'"></a></div>
+        <p style="font-size:24px; display:table-cell; vertical-align:middle; height:50px;">학교찾기</p>
+    </center>
+	<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
+</header>
+
+<main>
+    <form action="/exchange/search_result" method="post">
+        <div class="row" style="margin-left: 0px; margin-right: 0px;">
+            
+            <div class="col-xs-1 col-sm-1 col-md-2"></div>
+            <div class="col-xs-10 col-sm-10 col-md-8">
+                <p style="margin-left:-7%; font-size:15px; margin-top:8%;">이름으로찾기</p>
+                <input type="text" style="width:105%; border:1px solid #8ed3e9; margin:0px 0px 12% -2.5%;
+                                                                            background-image: url('/assets/magnifier2.png');
+                                                                            background-repeat: no-repeat;
+                                                                            background-position: right;
+                                                                            height:4vh;">  
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-2"></div>
+            </div>
+        
+        
+        <div class="row" style="margin-left: 0px; margin-right: 0px;">
+            <div class="col-xs-1 col-sm-1 col-md-2"></div>
+            <div class="col-xs-10 col-sm-10 col-md-8">
+                <p style="margin-left:-7%; font-size:15px;">필터로 찾기</p>
+                <div style="width:105%; border:1px solid #8ed3e9; margin:0px 0px 10px -2.5%; height:9vh;">
+                    <p class="search_title" style="font-size:15px;">구분</p> 
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6">
+                            <input type="checkbox" id="c1"name="checkbox" value="value" ><label class="checkbox" for="c1">   교환학생</label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                            <input type="checkbox" id="c2"name="checkbox" value="value" ><label class="checkbox" for="c2">   해외수학생</label>
+                        </div>                
+                    </div>
+                </div>
+                <div style="width:105%; border:1px solid #8ed3e9; margin:0px 0px 10px -2.5%; height:13vh;">
+                    <p class="search_title" style="font-size:15px;">위치</p> 
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4">
+                            <input type="checkbox" id="c3"name="checkbox" value="value" ><label class="checkbox" for="c3">   아시아</label>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <input type="checkbox" id="c4"name="checkbox" value="value" ><label class="checkbox" for="c4">   아메리카</label>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <p><input type="checkbox" id="c5"name="checkbox" value="value" ><label class="checkbox" for="c5">   아프리카</label>
+                            </p>
+                        </div>   
+                        
+                        <div class="col-xs-6 col-sm-6">
+                            <input type="checkbox" id="c6"name="checkbox" value="value" ><label class="checkbox" for="c6">   유럽</label>
+                        </div>  
+                        
+                        <div class="col-xs-6 col-sm-6">
+                            <input type="checkbox" id="c7"name="checkbox" value="value" ><label class="checkbox" for="c7">   오스트레일리아</label>
+                        </div>   
+                    </div>  
+                </div>
+                <div style="width:105%; border:1px solid #8ed3e9; margin:0px 0px 10px -2.5%; height:13vh;">  
+                    <p class="search_title" style="font-size:15px;">공인어학성적</p> 
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4">
+                            <input type="checkbox" id="c8"name="checkbox" value="value" ><label class="checkbox" for="c8">   토익</label>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <input type="checkbox" id="c9"name="checkbox" value="value" ><label class="checkbox" for="c9">   토플</label>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <p><input type="checkbox" id="c10"name="checkbox" value="value" ><label class="checkbox" for="c10">   IELTS</label>
+                            </p>
+                        </div>  
+                        <div class="col-xs-4 col-sm-4">
+                            <input type="checkbox" id="c11"name="checkbox" value="value" ><label class="checkbox" for="c11">   JLPT</label>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <input type="checkbox" id="c12"name="checkbox" value="value" ><label class="checkbox" for="c12">   HSK</label>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <p><input type="checkbox" id="c13"name="checkbox" value="value" ><label class="checkbox" for="c13">   DELF</label>
+                            </p>
+                        </div> 
+                    </div>  
+                </div>
+                <div style="width:105%; border:1px solid #8ed3e9; margin:0px 0px 10px -2.5%; height:13vh;">
+                    <p class="search_title" style="font-size:15px;">기간</p> 
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6">
+                            <input type="checkbox" id="c14"name="checkbox" value="value" ><label class="checkbox" for="c14">   6개월 이내</label>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                            <p><input type="checkbox" id="c15"name="checkbox" value="value" ><label class="checkbox" for="c15">   1년 이내</label></p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                            <input type="checkbox" id="c16"name="checkbox" value="value" ><label class="checkbox" for="c16">   1년 이상</label>
+                        </div>
+                    </div>   
+                </div>
+                
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-2"></div>
+        </div>
+        
+<div style="width:100%; height:5vh;"></div>
+
+<div class="row" style="margin:auto; width:80vw; text-align:center;">
+  <div class="col-xs-6 col-sm-6 col-md-6" style="display:block;float:left;">
+    <div style="background-color:#fffe9a; width: 24vw; float:left; margin: 0px 0px 0px 7vw; height: 8vw;">
+    <button style="background-color:transparent; border:0px;padding-top:0px !important;">        
+    <p style="font-size:15px; display:table-cell; vertical-align:middle; height:7vw;">상세검색▼</p>
+    </button>
+    </div>
   </div>
-  <div class="main_menu">
-    <img src="/assets/magnifier.png" onclick="location.href='/exchange/search'">
-    <h4 style="text-align:center;">학교찾기</h4>
-  </div>
-  <div class="main_menu">
-    <img src="/assets/folder.png">
-    <h4 style="text-align:center;">검색<br/>History</h4>
+  <div class="col-xs-6 col-sm-6 col-md-6" style="">
+    <div style="background-color:#fffe9a; width: 24vw; float:right; margin: 0px 7vw 0px 0px; height: 8vw;">
+    <button style="background-color:transparent; border:0px; padding-top:0px !important;">
+        <p style="font-size:15px; display:table-cell; vertical-align:middle; height:7vw;">검색하기</p>
+    </button>
+    </div>
   </div>
 </div>
-    <img src="/assets/4-1.jpg" onclick="location.href='/exchange/ourschool'">
-    <img src="/assets/4-2.jpg">
-	</main>
+    </form>
+</main>
 
 
 
@@ -528,4 +632,5 @@ table {
 	<img class="nav_img"src="/assets/7">
 	<img class="nav_img"src="/assets/8">
 	</div> <!-- cd-cart -->
+	
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
