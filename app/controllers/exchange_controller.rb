@@ -20,4 +20,8 @@ class ExchangeController < ApplicationController
       
   end
   
+  def school_country
+      
+  end
+  
 end
